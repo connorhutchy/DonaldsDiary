@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lDU-aR-Kge">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="tommys-first-alphabet.regular.ttf">
+            <string>TommysFirstAlphabet</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--DiaryViewController-->
+        <scene sceneID="KH2-wk-eFq">
+            <objects>
+                <pageViewController storyboardIdentifier="DiaryView" autoresizesArchivedViewToFullSize="NO" title="DiaryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="lDU-aR-Kge" customClass="DiaryViewController" customModule="DonaldsDiary" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iFh-7m-KbV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-254" y="-177"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="gjL-OS-p9f">
+            <objects>
+                <viewController storyboardIdentifier="SinglePage" id="572-VL-Ffk" customClass="PageViewController" customModule="DonaldsDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mZe-bd-Uom">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="heS-a1-5I9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <accessibility key="accessibilityConfiguration" label="Background"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diary" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="60" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="5JM-GL-cJa">
+                                <rect key="frame" x="48" y="195" width="322" height="53"/>
+                                <fontDescription key="fontDescription" name="TommysFirstAlphabet" family="Tommy's First Alphabet" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Dear Diary... " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yx3-Uh-Alb">
+                                <rect key="frame" x="48" y="155" width="238" height="32"/>
+                                <fontDescription key="fontDescription" name="TommysFirstAlphabet" family="Tommy's First Alphabet" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zO3-3c-Haq">
+                                <rect key="frame" x="48" y="86" width="221" height="24.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SJi-9I-Ppp"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yx3-Uh-Alb" firstAttribute="leading" secondItem="SJi-9I-Ppp" secondAttribute="leading" constant="48" id="0jx-bD-jkU"/>
+                            <constraint firstItem="SJi-9I-Ppp" firstAttribute="top" secondItem="heS-a1-5I9" secondAttribute="top" constant="44" id="0tJ-zO-Erm"/>
+                            <constraint firstItem="SJi-9I-Ppp" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5JM-GL-cJa" secondAttribute="bottom" constant="17" id="8UW-LD-YGF"/>
+                            <constraint firstItem="SJi-9I-Ppp" firstAttribute="trailing" secondItem="zO3-3c-Haq" secondAttribute="trailing" constant="145" id="9ue-pJ-I08"/>
+                            <constraint firstItem="SJi-9I-Ppp" firstAttribute="trailing" secondItem="heS-a1-5I9" secondAttribute="trailing" id="DS0-VJ-0Zc"/>
+                            <constraint firstItem="5JM-GL-cJa" firstAttribute="leading" secondItem="heS-a1-5I9" secondAttribute="trailing" constant="-366" id="DhD-3W-gc1"/>
+                            <constraint firstItem="5JM-GL-cJa" firstAttribute="centerX" secondItem="heS-a1-5I9" secondAttribute="centerX" constant="2" id="FQn-pR-trk"/>
+                            <constraint firstItem="zO3-3c-Haq" firstAttribute="top" secondItem="SJi-9I-Ppp" secondAttribute="top" constant="42" id="OpS-4i-VhW"/>
+                            <constraint firstItem="5JM-GL-cJa" firstAttribute="top" secondItem="SJi-9I-Ppp" secondAttribute="top" constant="151" id="Try-Zx-JAE"/>
+                            <constraint firstItem="SJi-9I-Ppp" firstAttribute="trailing" secondItem="Yx3-Uh-Alb" secondAttribute="trailing" constant="128" id="dg7-9R-dFt"/>
+                            <constraint firstItem="5JM-GL-cJa" firstAttribute="top" secondItem="Yx3-Uh-Alb" secondAttribute="bottom" constant="8" id="i71-2C-cQA"/>
+                            <constraint firstItem="zO3-3c-Haq" firstAttribute="leading" secondItem="SJi-9I-Ppp" secondAttribute="leading" constant="48" id="ksU-Vw-NH1"/>
+                            <constraint firstItem="heS-a1-5I9" firstAttribute="leading" secondItem="SJi-9I-Ppp" secondAttribute="leading" id="q12-lw-LkA"/>
+                            <constraint firstItem="SJi-9I-Ppp" firstAttribute="bottom" secondItem="heS-a1-5I9" secondAttribute="bottom" constant="-34" id="vck-fr-Ldh"/>
+                            <constraint firstItem="SJi-9I-Ppp" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5JM-GL-cJa" secondAttribute="trailing" constant="44" id="wv1-pE-CDN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="heS-a1-5I9" id="x5n-Ka-5kQ"/>
+                        <outlet property="date" destination="zO3-3c-Haq" id="4Bc-Us-Rub"/>
+                        <outlet property="tweet" destination="5JM-GL-cJa" id="eyT-MX-rVe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eMI-Ho-heE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="682.60869565217399" y="-177.45535714285714"/>
+        </scene>
+        <!--FrontPage-->
+        <scene sceneID="EhB-Xo-5cw">
+            <objects>
+                <viewController storyboardIdentifier="FrontPage" title="FrontPage" id="Wa9-oP-PCC" customClass="FrontCoverController" customModule="DonaldsDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ozI-H4-BYi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FrontCover" translatesAutoresizingMaskIntoConstraints="NO" id="7qV-my-TGP">
+                                <rect key="frame" x="-24" y="0.0" width="438" height="927"/>
+                                <accessibility key="accessibilityConfiguration" label="Background"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-f9-klJ">
+                                <rect key="frame" x="117" y="352" width="208" height="192"/>
+                                <string key="text">Donald's
+Diary</string>
+                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="40"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(not) by Trump" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhh-L3-CAL">
+                                <rect key="frame" x="41" y="814" width="360" height="23"/>
+                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="20"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="89L-35-wya"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="89L-35-wya" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dfy-f9-klJ" secondAttribute="bottom" constant="318" id="2QX-kh-cYi"/>
+                            <constraint firstItem="yhh-L3-CAL" firstAttribute="top" secondItem="dfy-f9-klJ" secondAttribute="bottom" constant="270" id="6z3-kt-Dap"/>
+                            <constraint firstItem="dfy-f9-klJ" firstAttribute="top" secondItem="89L-35-wya" secondAttribute="top" constant="308" id="Fj0-o7-PyK"/>
+                            <constraint firstItem="89L-35-wya" firstAttribute="bottom" secondItem="7qV-my-TGP" secondAttribute="bottom" constant="-65" id="HE4-Wv-ZTX"/>
+                            <constraint firstItem="89L-35-wya" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="dfy-f9-klJ" secondAttribute="trailing" constant="89" id="JtK-n9-oPO"/>
+                            <constraint firstItem="dfy-f9-klJ" firstAttribute="leading" secondItem="89L-35-wya" secondAttribute="leading" constant="117" id="REP-Fw-xY7"/>
+                            <constraint firstItem="dfy-f9-klJ" firstAttribute="centerY" secondItem="ozI-H4-BYi" secondAttribute="centerY" id="RyU-HA-OSz"/>
+                            <constraint firstItem="yhh-L3-CAL" firstAttribute="centerX" secondItem="7qV-my-TGP" secondAttribute="centerX" constant="26" id="UEv-rV-2kv"/>
+                            <constraint firstItem="yhh-L3-CAL" firstAttribute="width" secondItem="7qV-my-TGP" secondAttribute="width" multiplier="0.821918" id="WsL-QH-Ja4"/>
+                            <constraint firstItem="89L-35-wya" firstAttribute="top" secondItem="7qV-my-TGP" secondAttribute="top" constant="44" id="asA-0U-ckI"/>
+                            <constraint firstItem="7qV-my-TGP" firstAttribute="leading" secondItem="89L-35-wya" secondAttribute="leading" constant="-24" id="cj8-v1-TeT"/>
+                            <constraint firstItem="89L-35-wya" firstAttribute="trailing" secondItem="7qV-my-TGP" secondAttribute="trailing" id="hd6-Gk-vTA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="7qV-my-TGP" id="vBU-ye-W7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FCT-fP-9CV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471.0144927536232" y="-177.45535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Backdrop" width="1275" height="1650"/>
+        <image name="FrontCover" width="1024" height="1528"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

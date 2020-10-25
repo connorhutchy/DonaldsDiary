@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IXs-Dx-evM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FrontPage-->
+        <scene sceneID="Ugo-F0-cgf">
+            <objects>
+                <viewController storyboardIdentifier="FrontPage" title="FrontPage" id="IXs-Dx-evM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xxf-Eb-qfi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FrontCover" translatesAutoresizingMaskIntoConstraints="NO" id="VJZ-Ur-5QZ">
+                                <rect key="frame" x="-24" y="44" width="438" height="818"/>
+                                <accessibility key="accessibilityConfiguration" label="Background"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWZ-od-tuh">
+                                <rect key="frame" x="117" y="352" width="208" height="192"/>
+                                <string key="text">Donald's
+Diary</string>
+                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="50"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sj4-Q3-vXm"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sj4-Q3-vXm" firstAttribute="bottom" secondItem="VJZ-Ur-5QZ" secondAttribute="bottom" id="7gr-Ku-aVS"/>
+                            <constraint firstItem="YWZ-od-tuh" firstAttribute="top" secondItem="sj4-Q3-vXm" secondAttribute="top" constant="308" id="JT3-dW-4u8"/>
+                            <constraint firstItem="sj4-Q3-vXm" firstAttribute="trailing" secondItem="VJZ-Ur-5QZ" secondAttribute="trailing" id="KYS-JW-5hP"/>
+                            <constraint firstItem="sj4-Q3-vXm" firstAttribute="top" secondItem="VJZ-Ur-5QZ" secondAttribute="top" id="Ri7-5J-nH5"/>
+                            <constraint firstItem="sj4-Q3-vXm" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="YWZ-od-tuh" secondAttribute="trailing" constant="89" id="U5k-1Y-WMM"/>
+                            <constraint firstItem="VJZ-Ur-5QZ" firstAttribute="leading" secondItem="sj4-Q3-vXm" secondAttribute="leading" constant="-24" id="eBL-yM-rBJ"/>
+                            <constraint firstItem="YWZ-od-tuh" firstAttribute="leading" secondItem="sj4-Q3-vXm" secondAttribute="leading" constant="117" id="gmX-OH-GyW"/>
+                            <constraint firstItem="sj4-Q3-vXm" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YWZ-od-tuh" secondAttribute="bottom" constant="318" id="oZx-hg-QLt"/>
+                            <constraint firstItem="YWZ-od-tuh" firstAttribute="centerY" secondItem="xxf-Eb-qfi" secondAttribute="centerY" id="s5l-AA-JQ1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="VJZ-Ur-5QZ" id="nwa-cZ-iiw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ThE-Xk-9uu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FrontCover" width="1024" height="1528"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
