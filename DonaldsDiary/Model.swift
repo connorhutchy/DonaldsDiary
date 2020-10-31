@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwifteriOS
 
 protocol Refresh
 {
@@ -27,27 +28,64 @@ class TwitterAPI_Access {
     
     
     func getTweets(){
-    
-        let address = url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
-        
-        let config = URLSessionConfiguration.default
-        
-        session = URLSession(configuration: config)
-        
         //seperate private class and function to hide my keys and authentication etc
         let oAuth = OAuth()
-        let oAuthString = oAuth.getString()
         
+        let swifter = Swifter(consumerKey: oAuth.consumer_key, consumerSecret: oAuth.consumer_secret)
         
-        if let url = URL(string: address!)
-        {
-            var request = URLRequest(url: url)
-            request.httpMethod = "GET"
-            request.setValue(oAuthString, forHTTPHeaderField: "Authorization")
+        swifter.getTimeline(for: .screenName("realDonaldTrump"), customParam:["tweet_mode":"extended"], count: 50, sinceID: nil, maxID: nil, trimUser: nil, excludeReplies: true, includeRetweets: false, contributorDetails: false, includeEntities: false, tweetMode: TweetMode.extended,
+        
+        //swifter.getTimeline(for: .screenName("realDonaldTrump"), customParam: ["tweet_mode":"extended"],
+        
+        success: { json in
             
-            getData(request)
+            let texts = json.array
+            
+
+                for next in texts! {
+             
+                    if var tweetText = next["full_text"].string {
+                        
+                        
+                        if !tweetText.prefix(4).contains("RT") && !tweetText.prefix(4).contains("http"){
+                            
+                            if(tweetText.contains("http")){
+                                
+                                for substring in tweetText.components(separatedBy: " ")
+                                {
+                                    if substring.contains("http"){
+                                        tweetText = tweetText.replacingOccurrences(of: substring, with: "",options: [.caseInsensitive,.regularExpression])
+                                    }
+                                    
+                                    for scalar in substring.unicodeScalars {
+                                        let isEmoji = scalar.properties.isEmoji
+                                        if isEmoji{
+                                            tweetText = tweetText.replacingOccurrences(of: substring, with: "",options: [.caseInsensitive,.regularExpression])
+                                        }
+                                        
+                                    }
+                                    
+                                    
+                                }
+                            }
+                            self.tweets.append(tweetText)
+                            print(tweetText + "\n")
+                            self.dates.append(next["created_at"].string!)
+                            DispatchQueue.main.async(execute:{
+                                self.delegate?.updateUI()
+                            })
+                        }
+                    }
+                }
+ 
+ 
+        },
+        failure: {_ in
+            print()
             
         }
+        )
+        
         
     }
 

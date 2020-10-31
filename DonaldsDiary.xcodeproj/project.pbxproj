@@ -17,8 +17,10 @@
 		B333C857254404B9008968A0 /* DonaldsDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333C856254404B9008968A0 /* DonaldsDiaryTests.swift */; };
 		B333C862254404B9008968A0 /* DonaldsDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333C861254404B9008968A0 /* DonaldsDiaryUITests.swift */; };
 		B333C8732544079D008968A0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333C8722544079D008968A0 /* Model.swift */; };
+		B358DE8B254D0C030066628A /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B358DE79254D0BDA0066628A /* SwifteriOS.framework */; };
 		B386452F2544E6F80039E024 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386452E2544E6F80039E024 /* PageViewController.swift */; };
 		B3897599254586C50062CC7E /* Model_Oauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3897598254586C50062CC7E /* Model_Oauth.swift */; };
+		B3A751B5254D1039007E7FC5 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B358DE79254D0BDA0066628A /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3A86833254526B800D16B07 /* tommys-first-alphabet.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3A86832254526B800D16B07 /* tommys-first-alphabet.regular.ttf */; };
 		B3A8683B25452B9600D16B07 /* FrontCoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A8683A25452B9600D16B07 /* FrontCoverController.swift */; };
 		B3D9E324254539F800AB55AC /* yearsoldfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3D9E326254539F800AB55AC /* yearsoldfont.ttf */; };
@@ -39,7 +41,56 @@
 			remoteGlobalIDString = B333C838254404B8008968A0;
 			remoteInfo = DonaldsDiary;
 		};
+		B358DE78254D0BDA0066628A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B358DE68254D0BDA0066628A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		B358DE7A254D0BDA0066628A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B358DE68254D0BDA0066628A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		B358DE7C254D0BDA0066628A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B358DE68254D0BDA0066628A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		B358DE7E254D0BDA0066628A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B358DE68254D0BDA0066628A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		B358DE80254D0BDA0066628A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B358DE68254D0BDA0066628A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B358DE8D254D0C030066628A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B3A751B5254D1039007E7FC5 /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B333C839254404B8008968A0 /* DonaldsDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DonaldsDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +109,73 @@
 		B333C861254404B9008968A0 /* DonaldsDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonaldsDiaryUITests.swift; sourceTree = "<group>"; };
 		B333C863254404B9008968A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B333C8722544079D008968A0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B358DE23254D0BDA0066628A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B358DE25254D0BDA0066628A /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		B358DE26254D0BDA0066628A /* TweetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsViewController.swift; sourceTree = "<group>"; };
+		B358DE27254D0BDA0066628A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B358DE28254D0BDA0066628A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B358DE29254D0BDA0066628A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B358DE2A254D0BDA0066628A /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		B358DE2B254D0BDA0066628A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B358DE2C254D0BDA0066628A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B358DE2E254D0BDA0066628A /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		B358DE30254D0BDA0066628A /* SwifterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterTests.swift; sourceTree = "<group>"; };
+		B358DE31254D0BDA0066628A /* JSONTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTest.swift; sourceTree = "<group>"; };
+		B358DE32254D0BDA0066628A /* String+SwifterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SwifterTests.swift"; sourceTree = "<group>"; };
+		B358DE33254D0BDA0066628A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B358DE34254D0BDA0066628A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B358DE35254D0BDA0066628A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B358DE37254D0BDA0066628A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B358DE38254D0BDA0066628A /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		B358DE3A254D0BDA0066628A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B358DE3B254D0BDA0066628A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B358DE3C254D0BDA0066628A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B358DE3D254D0BDA0066628A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B358DE3E254D0BDA0066628A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		B358DE3F254D0BDA0066628A /* Swifter.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Swifter.podspec; sourceTree = "<group>"; };
+		B358DE41254D0BDA0066628A /* Data++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data++.swift"; sourceTree = "<group>"; };
+		B358DE42254D0BDA0066628A /* SwifterHTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterHTTPRequest.swift; sourceTree = "<group>"; };
+		B358DE43254D0BDA0066628A /* SwifterClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterClientProtocol.swift; sourceTree = "<group>"; };
+		B358DE44254D0BDA0066628A /* SwifterLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterLists.swift; sourceTree = "<group>"; };
+		B358DE45254D0BDA0066628A /* Operator++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator++.swift"; sourceTree = "<group>"; };
+		B358DE46254D0BDA0066628A /* SwifterMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterMedia.swift; sourceTree = "<group>"; };
+		B358DE47254D0BDA0066628A /* Swifter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swifter.h; sourceTree = "<group>"; };
+		B358DE48254D0BDA0066628A /* Swifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swifter.swift; sourceTree = "<group>"; };
+		B358DE49254D0BDA0066628A /* SwifterAppOnlyClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterAppOnlyClient.swift; sourceTree = "<group>"; };
+		B358DE4A254D0BDA0066628A /* HMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		B358DE4B254D0BDA0066628A /* String++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String++.swift"; sourceTree = "<group>"; };
+		B358DE4C254D0BDA0066628A /* SwifterTrends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterTrends.swift; sourceTree = "<group>"; };
+		B358DE4D254D0BDA0066628A /* Int++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int++.swift"; sourceTree = "<group>"; };
+		B358DE4E254D0BDA0066628A /* SwifterAccountsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterAccountsClient.swift; sourceTree = "<group>"; };
+		B358DE4F254D0BDA0066628A /* SwifterSuggested.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterSuggested.swift; sourceTree = "<group>"; };
+		B358DE50254D0BDA0066628A /* SwifterFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterFavorites.swift; sourceTree = "<group>"; };
+		B358DE51254D0BDA0066628A /* SwifterPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterPlaces.swift; sourceTree = "<group>"; };
+		B358DE52254D0BDA0066628A /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		B358DE53254D0BDA0066628A /* SwifterSavedSearches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterSavedSearches.swift; sourceTree = "<group>"; };
+		B358DE54254D0BDA0066628A /* Dictionary++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary++.swift"; sourceTree = "<group>"; };
+		B358DE55254D0BDA0066628A /* SwifterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterError.swift; sourceTree = "<group>"; };
+		B358DE56254D0BDA0066628A /* SwifterMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterMessages.swift; sourceTree = "<group>"; };
+		B358DE57254D0BDA0066628A /* SHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
+		B358DE58254D0BDA0066628A /* URL++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL++.swift"; sourceTree = "<group>"; };
+		B358DE59254D0BDA0066628A /* SwifterUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterUsers.swift; sourceTree = "<group>"; };
+		B358DE5A254D0BDA0066628A /* SwifterFollowers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterFollowers.swift; sourceTree = "<group>"; };
+		B358DE5B254D0BDA0066628A /* SwifterAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterAuth.swift; sourceTree = "<group>"; };
+		B358DE5C254D0BDA0066628A /* SwifterOAuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterOAuthClient.swift; sourceTree = "<group>"; };
+		B358DE5D254D0BDA0066628A /* SwifterTweets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterTweets.swift; sourceTree = "<group>"; };
+		B358DE5E254D0BDA0066628A /* SwifterHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterHelp.swift; sourceTree = "<group>"; };
+		B358DE5F254D0BDA0066628A /* Scanner++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scanner++.swift"; sourceTree = "<group>"; };
+		B358DE60254D0BDA0066628A /* SwifterCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterCredential.swift; sourceTree = "<group>"; };
+		B358DE61254D0BDA0066628A /* SwifterTimelines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterTimelines.swift; sourceTree = "<group>"; };
+		B358DE62254D0BDA0066628A /* SwifterSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterSearch.swift; sourceTree = "<group>"; };
+		B358DE63254D0BDA0066628A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		B358DE64254D0BDA0066628A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B358DE65254D0BDA0066628A /* SwifterTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterTag.swift; sourceTree = "<group>"; };
+		B358DE66254D0BDA0066628A /* SwifterSpam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterSpam.swift; sourceTree = "<group>"; };
+		B358DE67254D0BDA0066628A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B358DE68254D0BDA0066628A /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Swifter.xcodeproj; sourceTree = "<group>"; };
+		B358DE6D254D0BDA0066628A /* package.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = package.xcworkspace; sourceTree = "<group>"; };
+		B358DE71254D0BDA0066628A /* xcschememanagement.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = xcschememanagement.plist; sourceTree = "<group>"; };
+		B358DE72254D0BDA0066628A /* swifter_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swifter_logo.png; sourceTree = "<group>"; };
 		B386452E2544E6F80039E024 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		B3897598254586C50062CC7E /* Model_Oauth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model_Oauth.swift; sourceTree = "<group>"; };
 		B3A86832254526B800D16B07 /* tommys-first-alphabet.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tommys-first-alphabet.regular.ttf"; sourceTree = "<group>"; };
@@ -70,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B358DE8B254D0C030066628A /* SwifteriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +217,7 @@
 				B333C855254404B9008968A0 /* DonaldsDiaryTests */,
 				B333C860254404B9008968A0 /* DonaldsDiaryUITests */,
 				B333C83A254404B8008968A0 /* Products */,
+				B358DE1F254D0AA40066628A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +268,180 @@
 			path = DonaldsDiaryUITests;
 			sourceTree = "<group>";
 		};
+		B358DE1F254D0AA40066628A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B358DE22254D0BDA0066628A /* Swifter */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B358DE22254D0BDA0066628A /* Swifter */ = {
+			isa = PBXGroup;
+			children = (
+				B358DE23254D0BDA0066628A /* LICENSE */,
+				B358DE24254D0BDA0066628A /* SwifterDemoiOS */,
+				B358DE2D254D0BDA0066628A /* Tests */,
+				B358DE34254D0BDA0066628A /* README.md */,
+				B358DE35254D0BDA0066628A /* .gitignore */,
+				B358DE36254D0BDA0066628A /* SwifterDemoMac */,
+				B358DE3E254D0BDA0066628A /* Package.swift */,
+				B358DE3F254D0BDA0066628A /* Swifter.podspec */,
+				B358DE40254D0BDA0066628A /* Sources */,
+				B358DE68254D0BDA0066628A /* Swifter.xcodeproj */,
+				B358DE6B254D0BDA0066628A /* .swiftpm */,
+				B358DE72254D0BDA0066628A /* swifter_logo.png */,
+			);
+			path = Swifter;
+			sourceTree = "<group>";
+		};
+		B358DE24254D0BDA0066628A /* SwifterDemoiOS */ = {
+			isa = PBXGroup;
+			children = (
+				B358DE25254D0BDA0066628A /* AuthViewController.swift */,
+				B358DE26254D0BDA0066628A /* TweetsViewController.swift */,
+				B358DE27254D0BDA0066628A /* Main.storyboard */,
+				B358DE28254D0BDA0066628A /* Images.xcassets */,
+				B358DE29254D0BDA0066628A /* AppDelegate.swift */,
+				B358DE2A254D0BDA0066628A /* TweetCell.swift */,
+				B358DE2B254D0BDA0066628A /* Info.plist */,
+				B358DE2C254D0BDA0066628A /* SceneDelegate.swift */,
+			);
+			path = SwifterDemoiOS;
+			sourceTree = "<group>";
+		};
+		B358DE2D254D0BDA0066628A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B358DE2E254D0BDA0066628A /* LinuxMain.swift */,
+				B358DE2F254D0BDA0066628A /* SwifterTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B358DE2F254D0BDA0066628A /* SwifterTests */ = {
+			isa = PBXGroup;
+			children = (
+				B358DE30254D0BDA0066628A /* SwifterTests.swift */,
+				B358DE31254D0BDA0066628A /* JSONTest.swift */,
+				B358DE32254D0BDA0066628A /* String+SwifterTests.swift */,
+				B358DE33254D0BDA0066628A /* Info.plist */,
+			);
+			path = SwifterTests;
+			sourceTree = "<group>";
+		};
+		B358DE36254D0BDA0066628A /* SwifterDemoMac */ = {
+			isa = PBXGroup;
+			children = (
+				B358DE37254D0BDA0066628A /* ViewController.swift */,
+				B358DE38254D0BDA0066628A /* Tweet.swift */,
+				B358DE39254D0BDA0066628A /* Main.storyboard */,
+				B358DE3B254D0BDA0066628A /* Images.xcassets */,
+				B358DE3C254D0BDA0066628A /* AppDelegate.swift */,
+				B358DE3D254D0BDA0066628A /* Info.plist */,
+			);
+			path = SwifterDemoMac;
+			sourceTree = "<group>";
+		};
+		B358DE40254D0BDA0066628A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B358DE41254D0BDA0066628A /* Data++.swift */,
+				B358DE42254D0BDA0066628A /* SwifterHTTPRequest.swift */,
+				B358DE43254D0BDA0066628A /* SwifterClientProtocol.swift */,
+				B358DE44254D0BDA0066628A /* SwifterLists.swift */,
+				B358DE45254D0BDA0066628A /* Operator++.swift */,
+				B358DE46254D0BDA0066628A /* SwifterMedia.swift */,
+				B358DE47254D0BDA0066628A /* Swifter.h */,
+				B358DE48254D0BDA0066628A /* Swifter.swift */,
+				B358DE49254D0BDA0066628A /* SwifterAppOnlyClient.swift */,
+				B358DE4A254D0BDA0066628A /* HMAC.swift */,
+				B358DE4B254D0BDA0066628A /* String++.swift */,
+				B358DE4C254D0BDA0066628A /* SwifterTrends.swift */,
+				B358DE4D254D0BDA0066628A /* Int++.swift */,
+				B358DE4E254D0BDA0066628A /* SwifterAccountsClient.swift */,
+				B358DE4F254D0BDA0066628A /* SwifterSuggested.swift */,
+				B358DE50254D0BDA0066628A /* SwifterFavorites.swift */,
+				B358DE51254D0BDA0066628A /* SwifterPlaces.swift */,
+				B358DE52254D0BDA0066628A /* JSON.swift */,
+				B358DE53254D0BDA0066628A /* SwifterSavedSearches.swift */,
+				B358DE54254D0BDA0066628A /* Dictionary++.swift */,
+				B358DE55254D0BDA0066628A /* SwifterError.swift */,
+				B358DE56254D0BDA0066628A /* SwifterMessages.swift */,
+				B358DE57254D0BDA0066628A /* SHA1.swift */,
+				B358DE58254D0BDA0066628A /* URL++.swift */,
+				B358DE59254D0BDA0066628A /* SwifterUsers.swift */,
+				B358DE5A254D0BDA0066628A /* SwifterFollowers.swift */,
+				B358DE5B254D0BDA0066628A /* SwifterAuth.swift */,
+				B358DE5C254D0BDA0066628A /* SwifterOAuthClient.swift */,
+				B358DE5D254D0BDA0066628A /* SwifterTweets.swift */,
+				B358DE5E254D0BDA0066628A /* SwifterHelp.swift */,
+				B358DE5F254D0BDA0066628A /* Scanner++.swift */,
+				B358DE60254D0BDA0066628A /* SwifterCredential.swift */,
+				B358DE61254D0BDA0066628A /* SwifterTimelines.swift */,
+				B358DE62254D0BDA0066628A /* SwifterSearch.swift */,
+				B358DE63254D0BDA0066628A /* Launch Screen.storyboard */,
+				B358DE64254D0BDA0066628A /* Utils.swift */,
+				B358DE65254D0BDA0066628A /* SwifterTag.swift */,
+				B358DE66254D0BDA0066628A /* SwifterSpam.swift */,
+				B358DE67254D0BDA0066628A /* Info.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B358DE69254D0BDA0066628A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B358DE79254D0BDA0066628A /* SwifteriOS.framework */,
+				B358DE7B254D0BDA0066628A /* SwifterMac.framework */,
+				B358DE7D254D0BDA0066628A /* SwifterDemoiOS.app */,
+				B358DE7F254D0BDA0066628A /* SwifterDemoMac.app */,
+				B358DE81254D0BDA0066628A /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B358DE6B254D0BDA0066628A /* .swiftpm */ = {
+			isa = PBXGroup;
+			children = (
+				B358DE6C254D0BDA0066628A /* xcode */,
+			);
+			path = .swiftpm;
+			sourceTree = "<group>";
+		};
+		B358DE6C254D0BDA0066628A /* xcode */ = {
+			isa = PBXGroup;
+			children = (
+				B358DE6D254D0BDA0066628A /* package.xcworkspace */,
+				B358DE6E254D0BDA0066628A /* xcuserdata */,
+			);
+			path = xcode;
+			sourceTree = "<group>";
+		};
+		B358DE6E254D0BDA0066628A /* xcuserdata */ = {
+			isa = PBXGroup;
+			children = (
+				B358DE6F254D0BDA0066628A /* connor.xcuserdatad */,
+			);
+			path = xcuserdata;
+			sourceTree = "<group>";
+		};
+		B358DE6F254D0BDA0066628A /* connor.xcuserdatad */ = {
+			isa = PBXGroup;
+			children = (
+				B358DE70254D0BDA0066628A /* xcschemes */,
+			);
+			path = connor.xcuserdatad;
+			sourceTree = "<group>";
+		};
+		B358DE70254D0BDA0066628A /* xcschemes */ = {
+			isa = PBXGroup;
+			children = (
+				B358DE71254D0BDA0066628A /* xcschememanagement.plist */,
+			);
+			path = xcschemes;
+			sourceTree = "<group>";
+		};
 		B3A868312545269700D16B07 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,12 +461,15 @@
 				B333C835254404B8008968A0 /* Sources */,
 				B333C836254404B8008968A0 /* Frameworks */,
 				B333C837254404B8008968A0 /* Resources */,
+				B358DE8D254D0C030066628A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DonaldsDiary;
+			packageProductDependencies = (
+			);
 			productName = DonaldsDiary;
 			productReference = B333C839254404B8008968A0 /* DonaldsDiary.app */;
 			productType = "com.apple.product-type.application";
@@ -246,6 +543,12 @@
 			mainGroup = B333C830254404B8008968A0;
 			productRefGroup = B333C83A254404B8008968A0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B358DE69254D0BDA0066628A /* Products */;
+					ProjectRef = B358DE68254D0BDA0066628A /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B333C838254404B8008968A0 /* DonaldsDiary */,
@@ -254,6 +557,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B358DE79254D0BDA0066628A /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = B358DE78254D0BDA0066628A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B358DE7B254D0BDA0066628A /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = B358DE7A254D0BDA0066628A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B358DE7D254D0BDA0066628A /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = B358DE7C254D0BDA0066628A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B358DE7F254D0BDA0066628A /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = B358DE7E254D0BDA0066628A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B358DE81254D0BDA0066628A /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = B358DE80254D0BDA0066628A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B333C837254404B8008968A0 /* Resources */ = {
@@ -346,6 +687,14 @@
 				B333C84B254404B9008968A0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B358DE39254D0BDA0066628A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B358DE3A254D0BDA0066628A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		B3D9E326254539F800AB55AC /* yearsoldfont.ttf */ = {
